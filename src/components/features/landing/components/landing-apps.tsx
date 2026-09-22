@@ -11,6 +11,7 @@ const NAVIGATORS = [
     { id: 'openstreetmap', name: 'OSM', icon: '/images/apps/openstreetmap.png' },
     { id: 'citymapper', name: 'Citymapper', icon: '/images/apps/citymapper.png' },
     { id: 'moovit', name: 'Moovit', icon: '/images/apps/moovit.png' },
+    { id: 'transit', name: 'Transit', icon: '/images/apps/transit.png' },
     { id: 'uber', name: 'Uber', icon: '/images/apps/uber.png' },
     { id: 'lyft', name: 'Lyft', icon: '/images/apps/lyft.png' },
     { id: 'yandex-maps', name: 'Yandex Maps', icon: '/images/apps/yandex-maps.png' },
