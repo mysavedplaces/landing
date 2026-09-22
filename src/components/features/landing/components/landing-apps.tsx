@@ -9,6 +9,7 @@ const NAVIGATORS = [
     { id: 'sygic', name: 'Sygic', icon: '/images/apps/sygic.png' },
     { id: 'mapsme', name: 'Maps.me', icon: '/images/apps/mapsme.png' },
     { id: 'openstreetmap', name: 'OSM', icon: '/images/apps/openstreetmap.png' },
+    { id: 'organic-maps', name: 'Organic Maps', icon: '/images/apps/organic-maps.png' },
     { id: 'citymapper', name: 'Citymapper', icon: '/images/apps/citymapper.png' },
     { id: 'moovit', name: 'Moovit', icon: '/images/apps/moovit.png' },
     { id: 'transit', name: 'Transit', icon: '/images/apps/transit.png' },
