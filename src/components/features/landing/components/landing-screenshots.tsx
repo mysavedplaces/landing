@@ -4,12 +4,21 @@ import { useEffect, useRef, useState } from 'react'
 
 import Image from 'next/image'
 
-type Modifier = 'portrait' | 'left'
-const modifier: Modifier = 'portrait'
-
-const screenshotFlow = ['home', 'google', 'save', 'save-list', 'save-icon', 'saved', 'preview', 'settings-apps']
-
-const images = screenshotFlow.map(name => `/images/screenshots/${name}-${modifier}.png`)
+const screenshotFlow = [
+    'home',
+    'place-open',
+    'place-qr',
+    'save-place',
+    'save-place-icons',
+    'save-place-lists',
+    'saved',
+    'saved-list',
+    'saved-place-preview',
+    'settings-apps',
+    'settings-map-style',
+    'settings-lang',
+]
+const images = screenshotFlow.map(name => `/images/screenshots/${name}-portrait.png`)
 
 type ScreenshotLayer = {
     id: number

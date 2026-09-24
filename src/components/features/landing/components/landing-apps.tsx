@@ -1,23 +1,23 @@
 import Image from 'next/image'
 
 const NAVIGATORS = [
-    { id: 'waze', name: 'Waze', icon: '/images/apps/waze.png' },
-    { id: 'apple-maps', name: 'Apple', icon: '/images/apps/apple-maps.png' },
-    { id: 'google-maps', name: 'Google', icon: '/images/apps/google-maps.png' },
-    { id: 'here-wego', name: 'HERE Wego', icon: '/images/apps/here-wego.png' },
+    { id: 'here-wego', name: 'HERE', icon: '/images/apps/here-wego.png' },
     { id: 'scenic', name: 'Scenic', icon: '/images/apps/scenic.png' },
     { id: 'sygic', name: 'Sygic', icon: '/images/apps/sygic.png' },
+    { id: 'waze', name: 'Waze', icon: '/images/apps/waze.png' },
+    { id: 'yandex', name: 'Yandex', icon: '/images/apps/yandex-navi.png' },
+    { id: 'apple-maps', name: 'Apple', icon: '/images/apps/apple-maps.png' },
+    { id: 'google-maps', name: 'Google', icon: '/images/apps/google-maps.png' },
     { id: 'mapsme', name: 'Maps.me', icon: '/images/apps/mapsme.png' },
     { id: 'openstreetmap', name: 'OSM', icon: '/images/apps/openstreetmap.png' },
-    { id: 'organic-maps', name: 'Organic Maps', icon: '/images/apps/organic-maps.png' },
+    { id: 'organic-maps', name: 'Organic', icon: '/images/apps/organic-maps.png' },
+    { id: 'yandex-maps', name: 'Yandex', icon: '/images/apps/yandex-maps.png' },
     { id: 'citymapper', name: 'Citymapper', icon: '/images/apps/citymapper.png' },
     { id: 'moovit', name: 'Moovit', icon: '/images/apps/moovit.png' },
     { id: 'transit', name: 'Transit', icon: '/images/apps/transit.png' },
-    { id: 'uber', name: 'Uber', icon: '/images/apps/uber.png' },
     { id: 'lyft', name: 'Lyft', icon: '/images/apps/lyft.png' },
-    { id: 'yandex-maps', name: 'Yandex Maps', icon: '/images/apps/yandex-maps.png' },
-    { id: 'yandex-go', name: 'Yandex Go', icon: '/images/apps/yandex-go.png' },
-    { id: 'yandex-navi', name: 'Yandex Navi', icon: '/images/apps/yandex-navi.png' },
+    { id: 'uber', name: 'Uber', icon: '/images/apps/uber.png' },
+    { id: 'yandex-go', name: 'Yandex', icon: '/images/apps/yandex-go.png' },
 ]
 
 export const LandingApps = () => {
