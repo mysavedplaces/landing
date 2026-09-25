@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 const NAVIGATORS = [
+    { id: 'dgis', name: '2GIS', icon: '/images/apps/2gis.png' },
     { id: 'here-wego', name: 'HERE', icon: '/images/apps/here-wego.png' },
     { id: 'scenic', name: 'Scenic', icon: '/images/apps/scenic.png' },
     { id: 'sygic', name: 'Sygic', icon: '/images/apps/sygic.png' },
@@ -8,6 +9,7 @@ const NAVIGATORS = [
     { id: 'yandex', name: 'Yandex', icon: '/images/apps/yandex-navi.png' },
     { id: 'apple-maps', name: 'Apple', icon: '/images/apps/apple-maps.png' },
     { id: 'google-maps', name: 'Google', icon: '/images/apps/google-maps.png' },
+    { id: 'map-quest', name: 'MapQuest', icon: '/images/apps/mapquest.png' },
     { id: 'mapsme', name: 'Maps.me', icon: '/images/apps/mapsme.png' },
     { id: 'openstreetmap', name: 'OSM', icon: '/images/apps/openstreetmap.png' },
     { id: 'organic-maps', name: 'Organic', icon: '/images/apps/organic-maps.png' },
