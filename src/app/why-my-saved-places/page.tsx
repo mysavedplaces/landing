@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 
 import { WhyMySavedPlaces } from '@/components/features/why-my-saved-places/why-my-saved-places'
-import { PageCloseButton } from '@/components/ui/page-close-button'
 
 const description =
     'Save places by address or GPS, organize them into lists and trips, and open them in supported map, navigation, transit, or rideshare apps. No account required.'
@@ -50,8 +49,7 @@ export const metadata: Metadata = {
 
 export default function WhyMySavedPlacesPage() {
     return (
-        <main className="m-auto min-h-full max-w-250 flex-col bg-white px-4 py-10 sm:py-16 md:px-12">
-            <PageCloseButton />
+        <main className="mx-auto min-h-full max-w-250 flex-col bg-white px-4 py-10 sm:py-16 md:px-12">
             <WhyMySavedPlaces />
         </main>
     )

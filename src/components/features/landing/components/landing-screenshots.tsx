@@ -65,7 +65,7 @@ export const LandingScreenshots = () => {
     }, [layers])
 
     return (
-        <div className="relative h-166 w-100 shrink-0">
+        <div className="relative hidden h-166 w-100 shrink-0 lg:block">
             {layers.map((layer, layerIndex) => (
                 <Image
                     key={layer.id}
