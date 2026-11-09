@@ -2,35 +2,14 @@ import { Metadata } from 'next'
 
 import { Landing } from '@/components/features/landing/landing'
 
+const description =
+    'Save places, addresses, and coordinates in lists and trips. Open them in a supported map, navigation, transit, or rideshare app. No account required.'
+
 export const metadata: Metadata = {
-    title: 'My Saved Places',
-    description:
-        'Organize locations and save favorite places in seconds. Keep everything in one place and navigate instantly using your favorite app.',
-    keywords: [
-        'my saved places',
-        'save places once',
-        'favorite locations',
-        'saved locations',
-        'location organizer',
-        'save favorite places',
-        'organize locations',
-        'organize favorite places',
-        'store locations',
-        'place organizer',
-        'map organizer',
-        'location manager',
-        'save places app',
-        'organize saved places',
-        'navigation app favorites',
-        'taxi app saved places',
-        'open saved places in Google Maps',
-        'open saved places in Waze',
-        'Apple Maps saved places',
-        'Yandex Maps saved places',
-        'Maps.me saved places',
-        'iOS location organizer',
-        'iCloud sync saved places',
-    ],
+    title: {
+        absolute: 'Save, Organize & Manage your favorite places | My Saved Places',
+    },
+    description,
 
     alternates: {
         canonical: '/',
@@ -46,9 +25,8 @@ export const metadata: Metadata = {
     },
 
     openGraph: {
-        title: 'My Saved Places',
-        description:
-            'Organize locations and save favorite places in seconds. Keep everything in one place and navigate instantly using your favorite app.',
+        title: 'Save Places, Lists & Trips | My Saved Places',
+        description,
         type: 'website',
         locale: 'en_US',
         url: '/',
@@ -65,13 +43,33 @@ export const metadata: Metadata = {
 
     twitter: {
         card: 'summary_large_image',
-        title: 'My Saved Places',
-        description:
-            'Organize locations and save favorite places in seconds. Keep everything in one place and navigate instantly using your favorite app.',
+        title: 'Save Places, Lists & Trips | My Saved Places',
+        description,
         images: ['/images/og-preview.jpg'],
     },
 }
 
 export default function Home() {
-    return <Landing />
+    const structuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'My Saved Places',
+        applicationCategory: 'NavigationApplication',
+        operatingSystem: 'iOS 15.1 or later',
+        description,
+        url: 'https://mysavedplaces.com/',
+        downloadUrl: 'https://apps.apple.com/us/app/my-saved-places/id6767223800',
+        offers: {
+            '@type': 'Offer',
+            price: '0',
+            priceCurrency: 'USD',
+        },
+    }
+
+    return (
+        <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+            <Landing />
+        </>
+    )
 }

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 
 import { PrivacyPolicyApp } from '@/components/features/legal/privacy-policy-app'
+import { PageCloseButton } from '@/components/ui/page-close-button'
 
 export const metadata: Metadata = {
     title: 'Privacy Policy',
@@ -57,5 +58,10 @@ export const metadata: Metadata = {
 }
 
 export default function PrivacyPage() {
-    return <PrivacyPolicyApp />
+    return (
+        <main className="m-auto min-h-full max-w-250 flex-col bg-white px-4 py-10 sm:py-16 md:px-12">
+            <PageCloseButton />
+            <PrivacyPolicyApp />
+        </main>
+    )
 }

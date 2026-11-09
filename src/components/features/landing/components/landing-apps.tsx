@@ -7,7 +7,9 @@ const NAVIGATORS = [
     { id: 'sygic', name: 'Sygic', icon: '/images/apps/sygic.png' },
     { id: 'waze', name: 'Waze', icon: '/images/apps/waze.png' },
     { id: 'yandex', name: 'Yandex', icon: '/images/apps/yandex-navi.png' },
+    { id: 'amap', name: 'AMap', icon: '/images/apps/amap.png' },
     { id: 'apple-maps', name: 'Apple', icon: '/images/apps/apple-maps.png' },
+    { id: 'baidu', name: 'Baidu', icon: '/images/apps/baidu-maps.png' },
     { id: 'google-maps', name: 'Google', icon: '/images/apps/google-maps.png' },
     { id: 'map-quest', name: 'MapQuest', icon: '/images/apps/mapquest.png' },
     { id: 'mapsme', name: 'Maps.me', icon: '/images/apps/mapsme.png' },
@@ -24,11 +26,11 @@ const NAVIGATORS = [
 
 export const LandingApps = () => {
     return (
-        <div className="mb-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+        <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
             {NAVIGATORS.map(nav => (
                 <div key={nav.id} className="group flex flex-col items-center gap-2">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-50 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-orange-100 group-hover:shadow-md">
-                        <Image src={nav.icon} width={28} height={28} className="rounded-lg" alt={nav.name} />
+                    <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-orange-50 transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-orange-100 group-hover:shadow-md">
+                        <Image src={nav.icon} width={34} height={34} className="rounded-lg" alt={nav.name} />
                     </div>
                     <span className="text-xs font-semibold text-gray-500">{nav.name}</span>
                 </div>

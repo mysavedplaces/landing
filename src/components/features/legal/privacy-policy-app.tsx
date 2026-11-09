@@ -1,8 +1,8 @@
 export const PrivacyPolicyApp = () => {
     return (
         <div className="mx-auto w-full">
-            <div className="space-y-8 sm:space-y-10">
-                <header className="space-y-3">
+            <article className="space-y-6">
+                <header className="space-y-3 sm:space-y-4">
                     <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Privacy Policy</h1>
 
                     <p className="text-sm text-gray-500">Last updated: May 7, 2026</p>
@@ -129,7 +129,7 @@ export const PrivacyPolicyApp = () => {
 
                     <p className="font-medium break-all text-gray-900">oskolsky.maxim@gmail.com</p>
                 </section>
-            </div>
+            </article>
         </div>
     )
 }

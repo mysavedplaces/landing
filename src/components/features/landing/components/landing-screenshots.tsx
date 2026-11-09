@@ -6,19 +6,17 @@ import Image from 'next/image'
 
 const screenshotFlow = [
     'home',
-    'place-open',
-    'place-qr',
+    'navigation',
+    'qr',
     'save-place',
     'save-place-icons',
     'save-place-lists',
-    'saved',
-    'saved-list',
-    'saved-place-preview',
-    'settings-apps',
-    'settings-map-style',
-    'settings-lang',
+    'my-places',
+    'my-places-list',
+    'apps',
+    'lang',
 ]
-const images = screenshotFlow.map(name => `/images/screenshots/${name}-portrait.png`)
+const images = screenshotFlow.map(name => `/images/screenshots/${name}.png`)
 
 type ScreenshotLayer = {
     id: number

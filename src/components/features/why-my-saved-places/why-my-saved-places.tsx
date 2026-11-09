@@ -1,80 +1,62 @@
+import Link from 'next/link'
+
 import { AppStoreButton } from '@/components/features/landing/components/landing-cta'
 
 const FEATURES = [
-    'Save places from map, search, address, or coordinates',
-    'Create one shared list of favorite places across different map, navigation, and taxi apps',
-    'Organize locations into lists',
-    'Pin frequently used or important places',
-    'Open saved spots in Apple Maps, Google Maps, Waze, Uber, Lyft, OpenStreetMap, Yandex apps, Maps.me, and more',
-    'Copy or share destination links',
-    'Choose up to 4 favorite apps as quick actions',
-    'Optional iCloud Sync on iOS',
+    'Save places from search, an address, a map pin, or exact GPS coordinates',
+    'Add custom names and icons, and pin important locations for quick access',
+    'Organize places into custom lists and trip lists',
+    'Archive visited places without deleting them',
+    'Choose up to four preferred apps for quick access',
+    'Open places in supported map, navigation, public transit, and rideshare apps',
+    'Display a QR code to open a saved place on another device',
+    'Use optional iCloud sync on supported Apple devices',
+    'No account is required',
 ]
 
 export const WhyMySavedPlaces = () => {
     return (
         <div className="mx-auto w-full">
-            <article className="space-y-5">
-                <header className="space-y-10">
-                    <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Why did I build My Saved Places?</h1>
+            <article className="space-y-6">
+                <header className="space-y-3 sm:space-y-4">
+                    <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Why I built My Saved Places</h1>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        Maybe this is a problem only I keep running into, but I couldn&apos;t find a simple tool that
-                        solved it well. Since I&apos;m an engineer, I decided to try building one myself. That&apos;s
-                        how <span className="font-medium">My Saved Places</span> started.
+                        Hi, my name is Maksim, and I created <strong>My Saved Places</strong>.
                     </p>
                 </header>
 
                 <section className="space-y-3 sm:space-y-4">
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        There are many apps and services for organizing favorites: notes, articles, videos, audio,
-                        bookmarks, and so on. But I couldn&apos;t find a convenient tool for organizing favorite places
-                        and locations.
+                        I kept saving the same destinations in different map and navigation apps, then searching for
+                        them again whenever I switched apps. I couldn&apos;t find a simple place organizer that fit this
+                        workflow, so I built <strong>My Saved Places</strong>.
                     </p>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        Every major map or navigation app has its own saved places list, and that often works fine
-                        inside that specific app. But what if you use several navigation apps?
+                        Notes and bookmarks can store an address, but they don&apos;t make it easy to open the same
+                        destination in the map, navigation, public transit, or rideshare app that suits the moment.
                     </p>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        For example, I use Google Maps for walking or cycling routes, Waze for car navigation, Yandex
-                        services when traveling around Eastern Europe, and taxi apps when I need a ride. All of these
-                        apps have their own saved places, but they don&apos;t sync with each other.
+                        Each map or navigation service keeps its own saved places. That works until you use several
+                        apps, plan a trip, or want to open a saved location in a different service.
                     </p>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        So you end up duplicating the same locations across different apps, searching for the same place
-                        again, copying coordinates, or losing track of important spots.
+                        A place saved in Google Maps may be needed in Waze for driving, in a transit app for a commute,
+                        or in a rideshare app when you need a pickup. Keeping separate lists means maintaining the same
+                        information in several places.
                     </p>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        That&apos;s the problem <span className="font-medium">My Saved Places</span> is trying to solve.
+                        My Saved Places keeps your saved locations together while giving you the freedom to use your
+                        favorite map or navigation app.
                     </p>
                 </section>
 
                 <section className="space-y-3 sm:space-y-4">
-                    <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        My Saved Places is a focused iOS app for saving locations once and opening them later in the app
-                        that works best for the moment.
-                    </p>
-
-                    <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        You can search for a place, enter coordinates, or move the map pin manually, then save that
-                        location with a name and optionally organize it into a list. Later, you can open the same saved
-                        place in Apple Maps, Google Maps, Waze, Uber, Lyft, OpenStreetMap, Yandex Maps, Yandex Navi,
-                        Yandex Go, Maps.me, and more.
-                    </p>
-
-                    <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        The app is intentionally lightweight: no user accounts, no complex planning system, no feed.
-                        Saved places stay on-device, and iOS users can enable optional iCloud Sync to keep places and
-                        lists available across Apple devices.
-                    </p>
-                </section>
-
-                <section className="space-y-3 sm:space-y-4">
-                    <h2 className="text-lg font-semibold sm:text-xl">Key Features</h2>
+                    <h2 className="text-lg font-semibold sm:text-xl">Save, Organize and Manage your favorite places</h2>
 
                     <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-gray-700 sm:text-base">
                         {FEATURES.map(feature => (
@@ -85,13 +67,19 @@ export const WhyMySavedPlaces = () => {
 
                 <section className="space-y-3 sm:space-y-4">
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
-                        If this problem feels familiar, or if you often lose track of important places, My Saved Places
-                        may make your life a little easier. Especially if you travel a lot, recently moved to a new city
-                        or country, spend a lot of time driving, or simply use different navigation apps like I do.
+                        If you travel, save recommendations, plan trips, or switch between navigation apps, My Saved
+                        Places gives you one place to keep the locations you want to find again.
                     </p>
 
                     <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
                         I&apos;d be happy to hear any constructive feedback.
+                    </p>
+                    <p className="text-sm leading-relaxed text-gray-700 sm:text-base">
+                        Read the{' '}
+                        <Link href="/legal/app/privacy-policy" className="text-[#F97316] underline">
+                            My Saved Places privacy policy
+                        </Link>
+                        .
                     </p>
                 </section>
 

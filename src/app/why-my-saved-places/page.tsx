@@ -1,33 +1,14 @@
 import { Metadata } from 'next'
 
 import { WhyMySavedPlaces } from '@/components/features/why-my-saved-places/why-my-saved-places'
+import { PageCloseButton } from '@/components/ui/page-close-button'
 
 const description =
-    'Why My Saved Places exists: save locations once, organize favorite places, and open them later in Apple Maps, Google Maps, Waze, Uber, Lyft, OpenStreetMap, Yandex apps, Maps.me, and more.'
+    'Save places by address or GPS, organize them into lists and trips, and open them in supported map, navigation, transit, or rideshare apps. No account required.'
 
 export const metadata: Metadata = {
-    title: 'Why did I build My Saved Places?',
+    title: 'Organize Saved Places Across Map Apps',
     description,
-    keywords: [
-        'My Saved Places',
-        'save places once',
-        'favorite places app',
-        'saved locations app',
-        'organize favorite places',
-        'map app saved places',
-        'navigation app favorites',
-        'open saved places in Google Maps',
-        'open saved places in Waze',
-        'open saved places in Apple Maps',
-        'open saved places in Uber',
-        'open saved places in Lyft',
-        'open saved places in taxi apps',
-        'OpenStreetMap saved places',
-        'Yandex Maps saved places',
-        'Maps.me saved places',
-        'iOS location organizer',
-        'iCloud sync saved places',
-    ],
 
     alternates: {
         canonical: '/why-my-saved-places',
@@ -43,7 +24,7 @@ export const metadata: Metadata = {
     },
 
     openGraph: {
-        title: 'Why did I build My Saved Places?',
+        title: 'Organize Saved Places Across Map Apps | My Saved Places',
         description,
         type: 'article',
         locale: 'en_US',
@@ -61,7 +42,7 @@ export const metadata: Metadata = {
 
     twitter: {
         card: 'summary_large_image',
-        title: 'Why did I build My Saved Places?',
+        title: 'Organize Saved Places Across Map Apps | My Saved Places',
         description,
         images: ['/images/og-preview.jpg'],
     },
@@ -70,6 +51,7 @@ export const metadata: Metadata = {
 export default function WhyMySavedPlacesPage() {
     return (
         <main className="m-auto min-h-full max-w-250 flex-col bg-white px-4 py-10 sm:py-16 md:px-12">
+            <PageCloseButton />
             <WhyMySavedPlaces />
         </main>
     )

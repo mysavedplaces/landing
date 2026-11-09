@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 import classNames from 'classnames'
-import type { Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { Roboto } from 'next/font/google'
@@ -17,8 +17,12 @@ const roboto = Roboto({
     subsets: ['latin'],
 })
 
-export const metadata = {
+export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
+    title: {
+        default: 'My Saved Places',
+        template: '%s | My Saved Places',
+    },
 }
 
 export const viewport: Viewport = {
@@ -37,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
                 <link rel="apple-touch-icon" href="/icons/icon-192.png" />
             </head>
             <body className="h-full bg-white antialiased">
-                <main className="h-full">{children}</main>
+                <div className="h-full">{children}</div>
                 <CookieConsent />
                 <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string} />
                 <TailwindIndicator />
