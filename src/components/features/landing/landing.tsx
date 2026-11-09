@@ -26,8 +26,8 @@ export const Landing = () => {
                         </h1>
 
                         <p className="text-lg text-gray-600 md:text-xl">
-                            Save favorite places, addresses, and GPS coordinates. Organize them into lists and trips,
-                            then open any location in a supported map, navigation, transit, or rideshare app.
+                            Save your favorite places, addresses, and GPS coordinates. Organize them into lists or
+                            trips, and open any location in your favorite map, navigation, transit, or rideshare app.
                         </p>
 
                         <LandingApps />
