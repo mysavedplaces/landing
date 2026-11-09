@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
     return (
-        <main className="mx-auto min-h-full max-w-250 flex-col bg-white px-4 py-10 sm:py-16 md:px-12">
+        <main className="mx-auto min-h-full max-w-250 flex-col bg-white">
             <PrivacyPolicyApp />
         </main>
     )

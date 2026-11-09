@@ -7,7 +7,7 @@ import { LandingScreenshots } from './components/landing-screenshots'
 
 export const Landing = () => {
     return (
-        <main className="wrapper flex w-full flex-1 flex-col items-center justify-center gap-y-12 bg-white px-4 py-12">
+        <main className="flex w-full flex-1 flex-col items-center justify-center gap-y-12 bg-white">
             <div className="flex w-full flex-col-reverse items-center gap-12 md:max-w-6xl lg:flex-row lg:items-center lg:gap-16">
                 <LandingScreenshots />
 
@@ -27,13 +27,22 @@ export const Landing = () => {
 
                         <p className="text-lg text-gray-600 md:text-xl">
                             Save your favorite places, addresses, and GPS coordinates. Organize them into lists or
-                            trips, and open any location in your favorite map, navigation, transit, or rideshare app.
+                            trips, and open any location in your favorite map, navigation, transit, or taxi app.
                         </p>
 
                         <LandingApps />
                     </div>
 
-                    <LandingCTA />
+                    <div className="space-y-4">
+                        <LandingCTA />
+
+                        <Link
+                            href="/legal/app/privacy-policy"
+                            className="text-sm text-gray-500 transition hover:text-[#F97316]"
+                        >
+                            Privacy Policy
+                        </Link>
+                    </div>
                 </div>
             </div>
         </main>
