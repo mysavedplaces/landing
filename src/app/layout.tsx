@@ -41,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
                 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
             </head>
             <body className="flex min-h-dvh flex-col bg-white antialiased">
-                <div className="flex flex-1 flex-col px-4 py-10">{children}</div>
+                <div>{children}</div>
                 <CookieConsent />
                 <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string} />
                 <TailwindIndicator />

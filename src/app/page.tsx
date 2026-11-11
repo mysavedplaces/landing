@@ -1,9 +1,10 @@
 import { Metadata } from 'next'
 
 import { Landing } from '@/components/features/landing/landing'
+import { LANDING_FAQ } from '@/components/features/landing/landing-content'
 
 const description =
-    'Save places, addresses, and coordinates in lists and trips. Open them in a supported map, navigation, transit, or rideshare app. No account required.'
+    'Save addresses and GPS coordinates with My Saved Places, a places manager and trip planner for iPhone. Organize locations into lists and open them in your favorite map, navigation, transit, or rideshare app.'
 
 export const metadata: Metadata = {
     title: {
@@ -66,9 +67,26 @@ export default function Home() {
         },
     }
 
+    const faqStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: LANDING_FAQ.map(item => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: {
+                '@type': 'Answer',
+                text: item.answer,
+            },
+        })),
+    }
+
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+            />
             <Landing />
         </>
     )
