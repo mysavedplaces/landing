@@ -19,6 +19,7 @@ const NAVIGATORS = [
     { id: 'citymapper', name: 'Citymapper', icon: '/images/apps/citymapper.png' },
     { id: 'moovit', name: 'Moovit', icon: '/images/apps/moovit.png' },
     { id: 'transit', name: 'Transit', icon: '/images/apps/transit.png' },
+    { id: 'bolt', name: 'Bolt', icon: '/images/apps/bolt.png' },
     { id: 'lyft', name: 'Lyft', icon: '/images/apps/lyft.png' },
     { id: 'uber', name: 'Uber', icon: '/images/apps/uber.png' },
     { id: 'yandex-go', name: 'Yandex', icon: '/images/apps/yandex-go.png' },
